@@ -1,0 +1,87 @@
+// =================================================
+// НИЖНЕЕ ПОДЧЕРКИВАНИЕ СЛОВА
+// underline
+// =================================================
+=underline($class, $color, $height, $width, $left-intend: 1, $bottom-intend: -5, $measures: px)
+  #{$class}::after
+    position: absolute
+    content: ''
+    display: block
+    background: $color
+    height: $height+$measures
+    max-width: $width+$measures
+    width: 100%
+    margin-top: $bottom-intend+$measures
+    margin-left: $left-intend+$measures
+
+
+// =================================================
+// ЦВЕТНАЯ ПЛАШКА ПОД СЛОВОМ
+// font-back
+// =================================================
+=font-back($color, $width, $height, $left, $top, $measures: px)
+  &::before
+    position: absolute
+    content: ''
+    display: block
+    background-color: $color
+    height: $height+$measures
+    width: 107%
+    max-width: $width+$measures
+    left: $left+$measures
+    top: $top+$measures
+    z-index: -1
+
+
+// =================================================
+// ПЕРЕВОДИТ ОБЫЧНУЮ РАЗРЯДКУ В EM
+// ls
+// =================================================
+@function ls($letter-spacing)
+  $one: 0.001
+  @return $letter-spacing * $one + em
+
+
+// =================================================
+// ПОЗИЦИОНИРОВАНИЕ
+// position
+// =================================================
+=position($type, $top:0, $right:0, $bottom:0, $left:0, $measure: px)
+  position: $type
+  top: $top + $measure
+  right: $right + $measure
+  bottom: $bottom + $measure
+  left: $left + $measure
+
+
+// =================================================
+// MEDIA QUERIES
+// =================================================
+
+// Максимальное разрешение
+=m-max-wh($max-width, $max-height)
+  @media only screen and (max-width: $max-width + 1 + px) and (max-height: $max-height + 1 + px)
+    @content
+
+// Минимальное разрешение
+=m-max-wh-min-wh($max-width, $max-height, $min-width, $min-height)
+  @media only screen and (max-width: $max-width + 1 + px) and (max-height: $max-height + 1 + px) and (min-width: $min-width - 1 + px) and (max-height: $min-height - 1 + px)
+    @content
+
+// Уникальное разрешение, ограничивает max и сразу min
+=m-wh-unique($width, $height)
+  @media only screen and (max-width: $width + 1 + px) and (max-height: $height + 1 + px) and (min-width: $width - 2 + px) and (min-height: $height - 2 + px)
+    @content
+
+
+=add-before($content, $font-family, $font-size, $color, $margin-top: -1px, $margin-left: -5px)
+  &::before
+    content: $content
+    font-family: $font-family
+    font-size: $font-size
+    line-height: 1
+    color: $color
+    float: left
+    position: absolute
+    margin-top: $margin-top
+    margin-left: $margin-left

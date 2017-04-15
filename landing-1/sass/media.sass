@@ -1,0 +1,1118 @@
+@import 'MIXINS'
+// ========================================================================================================
+// МОНИТОРЫ
+// ========================================================================================================
+
+// 24" Desktop
+// 1920x1200
+// =================================================
++m-max-wh(1920, 1200)
+  .hat
+    height: 920px
+  .menu
+    height: 350px
+// =================================================
+
+
+// 23" Desktop
+// 1920x1080
+// =================================================
++m-max-wh(1920, 1080)
+  .hat
+    height: 900px
+    height: 100vh
+// =================================================
+
+
+// Firefox
+// 1920x900
+// =================================================
++m-max-wh(1920, 900)
++m-wh-unique(1920, 900)
+// =================================================
+
+// 22" Desktop
+// 1680x1050
+// =================================================
++m-max-wh(1680, 1050)
+  .hat h4
+    margin-top: 3.5%
+  .hat
+    height: 800px
+    height: 100vh
+  .hat-middle
+    margin-top: 180px
+  .procent-90
+    p
+      margin-bottom: 15%
+  .menu
+    height: 300px
+  .lessons
+    .lesson-descrp
+      left: -5.7%
+  .after-hat
+    .last h4
+      &::before
+        left: 0.1em
+  .arrow h2
+    .arrow-book
+      &::before
+        width: 345%
+// =================================================
+
+
+// 20" Desktop
+// 1600x900
+// =================================================
++m-max-wh(1600, 900)
+  .hat
+    height: 800px
+    height: 100vh
+  .hat-middle
+    margin-top: 130px
+// =================================================
+
+
+// 19" Desktop
+// 1440x900
+// =================================================
++m-max-wh(1440, 900)
+  .hat h4
+    margin-top: 2.5%
+  .hat-middle
+    margin-top: 140px
+  .menu
+    height: 300px
+  .elena-photo
+    h5
+      margin-top: 21%
+    h2
+      margin-top: 20%
+  .arrow h2
+    .arrow-book
+      &::before
+        width: 340%
+        max-width: 17em
+        left: -0.3em
+        top: 0.3em
+        z-index: -1
+
++m-wh-unique(1440, 900)
+// =================================================
+
+
+// 15" Desktop
+// 1366x768
+// =================================================
++m-max-wh(1366, 768)
+  .hat-middle
+    margin-top: 80px
++m-wh-unique(1366, 768)
+// =================================================
+
+
+// Firefox
+// 1280x600
+// =================================================
++m-max-wh(1280, 600)
+
++m-wh-unique(1280, 600)
+  .hat
+    .hat-middle
+      margin-top: 30px
+    .col-md-12
+      height: 60px
+  .menu
+    margin-top: 50px
+  .scroll-down
+    position: relative
+    top: -50px
+    left: 4px
+  .arrow-down
+    position: relative
+    top: -10px
+// =================================================
+
+
+
+
+
+// ========================================================================================================
+// ПЛАНШЕТЫ
+// ========================================================================================================
+
+// Microsoft Surface Pro
+// 1440x1024
+// =================================================
++m-max-wh(1440, 1024)
+  .elena-photo
+    h5
+      margin-top: 19%
+    h2
+      margin-top: 22%
+// reverse
++m-max-wh(1024, 1440)
+  .hat .container
+    width: 96%
+    .hat .container
+    width: 95%
+  .hat h4
+    font-size: em(32)
+    letter-spacing: ls(60)
+    margin-top: 3%
+  .hat h1
+    font-size: em(71)
+    letter-spacing: ls(120)
+  .arrow h2
+    .arrow-book
+      &::before
+        width: 230%
+  .menu
+    width: 258px
+    float: right
+    height: 300px
+    margin-top: 40px
+  .hat
+    height: 800px
+  .elena-photo
+    h5
+      margin-top: 13%
+    h2
+      font-size: em(32)
+      margin-top: 17%
+    h1
+      font-size: em(56)
+
++m-wh-unique(1440, 1024)
++m-wh-unique(1024, 1440)
+// =================================================
+
+
+// Apple iPad Pro
+// 1366x1024
+// =================================================
++m-max-wh(1366, 1024)
+
+// reverse
++m-max-wh(1024, 1366)
+  .lessons
+    .lesson-descrp
+      left: -5.7%
+
++m-wh-unique(1366, 1024)
+
++m-wh-unique(1024, 1366)
+// =================================================
+
+
+// Firefox
+// 1280x980
+// =================================================
+// reverse
++m-max-wh(980, 1280)
+
++m-wh-unique(980, 1280)
+  .container
+    width: 97%
+  body
+    font-size: 10.9px
+  .book
+    .book-form
+      input
+        width: 23%
+  .procent-90
+    p
+      font-size: 1.38em
+  .hat
+    height: 1050px
+  .hat h4
+    font-size: em(30)
+    letter-spacing: ls(60)
+    margin-top: 3%
+  .hat h1
+    font-size: em(75)
+    letter-spacing: ls(120)
+  .arrow img
+    display: none
+  .scroll-down
+    display: none
+  .arrow h2
+    .arrow-book
+      &::before
+        width: 109%
+  .hat-middle
+    margin-top: 50px
+  .hat
+    height: 920px
+  .menu
+    float: left
+  .after-hat
+    .last h4
+      &::before
+        height: 12em
+    .middle h4
+      &::before
+        height: 12em
+        left: -1em
+  .quote-1
+    margin-top: 55px
+    &::before
+      font-size: 4em
+      top: -52%
+    &::after
+      font-size: 4em
+      top: 68%
+      left: 42%
+  .true-leader
+    h4
+      width: 360px
+    input
+      width: 360px
+  .book
+    img
+      width: 83%
+  .become-leader h2
+    margin-top: 4%
+    font-size: em(30)
+  .elena-photo
+    h5
+      margin-top: 9%
+    h2
+      font-size: em(21)
+      margin-top: 13%
+    h1
+      font-size: em(41)
+    .headings
+      margin-left: 25px
+  .lessons
+    .lesson-descrp
+      left: -5.3%
+    .lesson-number
+      width: 110px
+  .begin-now
+    p
+      margin-top: 50px
+  .prices
+    left: 7px
+    padding: 0 10px
+  .middle-part ul
+    padding-left: 20px
+    padding-right: 10px
+// =================================================
+
+
+// Kindle Fire HD 8.9"
+// 1280x800
+// =================================================
++m-max-wh(1280, 800)
+  .hat-middle
+    margin-top: 100px
+  .elena-photo
+    h5
+      margin-top: 17%
+    h2
+      margin-top: 11%
+// reverse
++m-max-wh(800, 1280)
+  .container
+    width: 97%
+  body
+    font-size: 10.9px
+  .book
+    .book-form
+      input
+        width: 23%
+  .procent-90
+    p
+      font-size: 1.38em
+  .hat h4
+    font-size: em(30)
+    letter-spacing: ls(60)
+    margin-top: 3%
+  .hat h1
+    font-size: em(75)
+    letter-spacing: ls(120)
+  .arrow img
+    display: none
+  .scroll-down
+    display: none
+  .arrow h2
+    .arrow-book
+      &::before
+        width: 109%
+  .hat-middle
+    margin-top: 50px
+  .hat
+    height: auto
+  .menu
+    float: left
+    margin-bottom: 40px
+  .after-hat
+    .last h4
+      &::before
+        height: 12em
+    .middle h4
+      &::before
+        height: 12em
+        left: -1em
+  .quote-1
+    margin-top: 55px
+    &::before
+      font-size: 4em
+      top: -52%
+    &::after
+      font-size: 4em
+      top: 68%
+      left: 42%
+  .true-leader
+    h4
+      width: 360px
+    input
+      width: 360px
+  .book
+    img
+      width: 83%
+  .become-leader h2
+    margin-top: 4%
+    font-size: em(30)
+  .elena-photo
+    h5
+      margin-top: 9%
+    h2
+      font-size: em(21)
+      margin-top: 13%
+    h1
+      font-size: em(41)
+    .headings
+      margin-left: 25px
+  .lessons
+    .lesson-descrp
+      left: -5.3%
+    .lesson-number
+      width: 110px
+  .begin-now
+    p
+      margin-top: 50px
+  .prices
+    left: 7px
+    padding: 0 10px
+  .middle-part ul
+    padding-left: 20px
+    padding-right: 10px
+
+
+// =================================================
+
+
+// Apple iPad
+// 1024x768
+// =================================================
++m-max-wh(1024, 768)
+  .hat
+    height: 100vh
+  .hat .container
+    width: 95%
+  .hat h4
+    font-size: em(32)
+    letter-spacing: ls(60)
+    margin-top: 3%
+  .hat h1
+    font-size: em(71)
+    letter-spacing: ls(120)
+  .elena-photo
+    h5
+      margin-top: 11%
+    h2
+      font-size: em(32)
+      margin-top: 15%
+    h1
+      font-size: em(56)
+    .headings
+      margin-left: 40px
+  .menu
+    margin-top: 26px
+    width: 258px
+    float: right
+  .arrow h2
+    .arrow-book
+      &::before
+        width: 220%
+  .prices
+    left: 40px
+
+
+// reverse
++m-max-wh(768, 1024)
+  .procent-90
+    height: 485px
+    p
+      margin-bottom: 10px
+  .space
+    height: 0px
+// =================================================
+
+
+// Samsung Galaxy Tab 7"
+// 1024x600
+// =================================================
++m-max-wh(1024, 600)
+  .hat-middle
+    margin-top: 35px
+  .scroll-down
+    top: -95px
+  .elena-photo .col-sm-6
+    padding: 0
+  .hat
+    .col-md-12
+
+
+// reverse
++m-max-wh(600, 1024)
+  .hat
+    height: auto
+    h1
+      font-size: em(65)
+  .menu
+    margin-bottom: 40px
+  .after-hat
+    .middle h4, .last h4
+      position: static
+      display: block
+      &::before
+        display: none
+    h4
+      margin-bottom: 60px
+    img
+      margin-top: 50px
+  .icon-item
+    display: block
+    text-align: center
+    margin: 0 auto
+    height: 220px
+    &::before
+      top: 5px
+      left: 90px
+    img
+      margin-top: 50px
+      height: 70%
+  .quote-1
+    margin-bottom: 50px
+    &::before
+      top: -140%
+      left: 0%
+      font-size: 3em
+    &::after
+      font-size: 3em
+      position: static
+      float: right
+      margin-top: -15px
+  .quote-2
+    margin-bottom: 30px
+    &::before
+      font-size: 3em
+      top: -75%
+      left: 0%
+    &::after
+      font-size: 3em
+      position: static
+      float: right
+      margin-top: -20px
+  .true-leader
+    h4
+      margin-top: 10px
+    p
+      margin-bottom: 27px
+      margin-top: 30px
+    input
+      margin-bottom: 50px
+  .book
+    img
+      position: relative
+      width: 50%
+      left: 24%
+      margin-bottom: 30px
+  .procent-90
+    height: 780px
+    p
+      margin-top: 75px
+  .recall-item
+    margin-top: 50px
+    .recall
+      margin-bottom: 10px
+  .elena
+    .col-sm-6
+      padding: 0
+  .elena-photo
+    h2
+      margin-top: 5%
+    h5
+      margin-top: 5%
+    .litlle-arrow
+      margin-bottom: 20px
+  .elena
+    .bio-second
+      margin-top: 0
+  .lessons
+    .lesson-descrp
+      width: 100%
+      position: static
+      margin: 0px 0 15px 0
+    .lesson-number
+      margin-bottom: 4px
+
+    .about li
+      &::before
+        left: -4%
+    .bonus
+      padding-left: 13px
+  .phone
+    height: 550px
+    h3
+      margin-top: 40px
+      margin-bottom: 60px
+    .menu-form
+      margin-top: 30px
+  .packet
+    width: 48%
+    margin: 0 auto
+    margin-bottom: 30px
+  .true-leader .padding
+    height: 0
+  .true-leader input
+    margin-bottom: 35px
+// =================================================
+
+
+// Asus Nexus 7
+// 960x600
+// =================================================
++m-max-wh(960, 600)
+  .arrow img
+    display: none
+  .scroll-down
+    display: none
+  .arrow h2
+    .arrow-book
+      &::before
+        width: 109%
+  .menu
+    float: left
+    margin-bottom: 40px
+  .hat
+    height: 900px
+    h1
+      font-size: em(80)
+  .container
+    width: 97%
+  .quote-1
+    &::after
+      margin-top: 20px
+  .true-leader
+    h4, input
+      margin-left: 50px
+      width: 350px
+  .book
+    input
+      width: 23.3%
+  .elena-photo .col-sm-6
+    padding: 0
+  .begin-now
+    p
+      margin-top: 50px
+  .hat
+    height: auto
+  .true-leader .menu-button
+    margin-left: 0
+// reverse
++m-max-wh(600, 960)
+// =================================================
+
+
+// Kindle Fire HD 7"
+// 960x480
+// =================================================
++m-max-wh(800, 480)
+  .after-hat
+    .last h4
+      &::before
+        left: -1em
+  .elena-photo
+    h2
+      margin-top: 15%
+      font-size: em(25)
+    h1
+      font-size: em(40)
+    h5
+      margin-top: 8%
+    .litlle-arrow
+      margin-bottom: 20px
+  .prices
+    left: 5px
+// reverse
++m-max-wh(480, 800)
+  .hat
+    h1
+      font-size: em(51)
+  .quote-1
+    margin-bottom: 50px
+    &::before
+      top: -95%
+  .quote-2
+    margin-bottom: 30px
+    &::before
+      top: -50%
+  .book
+    input
+      width: 23.3%
+      margin-right: 1%
+  .procent-90
+    .cycle-slideshow
+      width: 100%
+    p
+      margin-top: 5px
+  .elena-photo
+    .cycle-slideshow
+      width: 100%
+  .how-it-goes-img
+    display: none
+  .how-it-goes-img-mobile
+    display: block
+  .prices
+    left: 15px
+  .packet
+    margin-top: 20px
+    width: 62%
+  .middle-part
+    height: 400px
+
+// =================================================
+
+
+
+
+
+// ========================================================================================================
+// МОБИЛЬНИКИ
+// ========================================================================================================
+
+// Apple iPhone 6/7 Plus
+// 414x736
+// =================================================
++m-max-wh(414, 736)
+  .hat
+    height: auto
+    h1
+      font-size: em(46)
+  .arrow h2
+    .arrow-book
+      &::before
+        width: 109%
+  .menu
+    margin-top: 25px
+    margin-bottom: 30px
+    float: left
+  .header-underlined
+    font-size: 2.1375em
+  .icon-item
+    &::before
+      top: 5px
+      left: 65px
+    img
+      margin-top: 50px
+      height: 60%
+  .true-leader
+    h1
+      font-size: em(45)
+    h4, input
+      width: 90%
+  .book
+    input
+      width: 23%
+      margin-right: 0.7%
+      padding-left: 2px
+      font-size: em(14)
+    .button
+      font-size: em(14)
+      letter-spacing: ls(30)
+  .procent-90
+    h3
+      font-size: 2.1375em
+    p
+      margin-top: 0
+    .photos
+      height: auto
+  .course-plan
+    input
+      letter-spacing: ls(30)
+  .how-it-goes
+    .container
+      width: 100%
+    img
+      width: 102%
+  .packet
+    width: 72%
+  .middle-part
+    height: 420px
+  .prices
+    left: 10px
+
+// reverse
++m-max-wh(736, 414)
+  .hat
+    height: 900px
+    h1
+      font-size: em(65)
+  .after-hat
+    .middle h4, .last h4
+      position: static
+      display: block
+      &::before
+        display: none
+    h4
+      margin-bottom: 60px
+    img
+      margin-top: 50px
+  .icon-item
+    display: block
+    text-align: center
+    margin: 0 auto
+    height: 220px
+    &::before
+      top: 5px
+      left: 90px
+    img
+      margin-top: 50px
+      height: 70%
+  .quote-1
+    margin-bottom: 50px
+    &::before
+      top: -140%
+      left: 0%
+      font-size: 3em
+    &::after
+      font-size: 3em
+      position: static
+      float: right
+      margin-top: -15px
+  .quote-2
+    margin-bottom: 30px
+    &::before
+      font-size: 3em
+      top: -75%
+      left: 0%
+    &::after
+      font-size: 3em
+      position: static
+      float: right
+      margin-top: -20px
+  .true-leader
+    h4
+      margin-top: 10px
+      margin-left: 0
+    p
+      margin-bottom: 27px
+      margin-top: 30px
+    input
+      margin-bottom: 50px
+      margin-left: 0
+  .book
+    img
+      position: relative
+      width: 35%
+      left: 32%
+      margin-bottom: 30px
+  .procent-90
+    height: 850px
+    p
+      margin-top: 75px
+    .photos
+      height: 380px
+  .recall-item
+    margin-top: 50px
+    .recall
+      margin-bottom: 10px
+  .elena
+    .col-sm-6
+      padding: 0
+  .elena-photo
+    h2
+      margin-top: 5%
+    h5
+      margin-top: 5%
+    .litlle-arrow
+      margin-bottom: 20px
+  .elena
+    .bio-second
+      margin-top: 0
+  .lessons
+    .lesson-descrp
+      width: 100%
+      position: static
+      margin: 0px 0 15px 0
+    .lesson-number
+      margin-bottom: 4px
+
+    .about li
+      &::before
+        left: -4%
+    .bonus
+      padding-left: 13px
+  .phone
+    height: 550px
+    h3
+      margin-top: 40px
+      margin-bottom: 60px
+    .menu-form
+      margin-top: 30px
+    .col-sm-5
+      width: 60%
+  .packet
+    width: 48%
+    margin: 0 auto
+    margin-bottom: 30px
+  .prices
+    left: 45px
+  .true-leader .padding
+    height: 0
+// =================================================
+
+
+// Apple iPhone 6/7
+// 375x667
+// =================================================
++m-max-wh(375, 667)
+  .hat
+    height: auto
+    h1
+      font-size: em(40)
+    h4
+      font-size: em(27)
+  .icon-item
+    &::before
+      left: 50px
+  .quote-2
+    &::before
+      top: -43%
+  .true-leader
+    h1
+      font-size: em(40)
+  .book
+    input
+      width: 23%
+      margin-right: 0.7%
+      padding-left: 2px
+      font-size: em(13)
+    .button
+      font-size: em(13)
+      letter-spacing: ls(30)
+  .procent-90
+    height: 830px
+  .course-plan
+    .header h1
+      font-size: em(54)
+      line-height: lh(50,47)
+    input
+      font-size: em(19)
+  .begin-now
+    input
+      width: 100%
+  .packet
+    width: 90%
+  .prices
+    left: 22px
+  .how-it-goes
+    img
+      margin-top: 30px
+
+// reverse
++m-max-wh(667,375)
+  .quote-2
+    &::before
+      top: -91%
+  .procent-90
+    height: 800px
+    p
+      margin-top: 40px
+  .prices
+    left: 25px
+
+// =================================================
+
+
+// Samsung Galaxy S3-7
+// 360x640
+// =================================================
++m-max-wh(360, 640)
+  .quote-1
+    &::before
+      top: -70%
+  .procent-90
+    height: 860px
+  .become-leader
+    h2
+      margin-top: 30px
+  .elena-photo
+    .headings
+      margin-left: 15px
+  .phone h3
+    font-size: em(62)
+  .book
+    input
+      font-size: em(12)
+// reverse
++m-max-wh(640, 360)
+  .quote-2
+    &::before
+      top: -68%
+  .procent-90
+    p
+      margin-top: 25px
+// =================================================
+
+
+// Apple iPhone 5
+// 320x568
+// =================================================
++m-max-wh(320, 568)
+  .buy .menu-button
+    width: 90%
+  .hat
+    h1
+      font-size: em(33)
+    h4
+      font-size: em(23)
+  .icon-item
+    height: 200px
+    img
+      height: 45%
+    &::before
+      top: 5px
+      left: 25px
+  .header-underlined
+    font-size: em(28)
+  .quote-2
+    &::before
+      top: -35%
+    &::after
+      margin-top: -35px
+  .quote-1
+    &::after
+      margin-top: -35px
+  .true-leader
+    h1
+      font-size: em(35)
+    h3
+      font-size: em(29)
+    h4, input
+      margin-left: 0
+  .book
+    input
+      width: 31% !important
+  .become-leader
+    .menu-button
+      width: 70%
+  .course-plan
+    .header h1
+      font-size: em(47)
+  .lessons
+    .about li
+      &::before
+        left: -6%
+  .course-plan
+    .menu-button
+      font-size: em(16)
+  .phone
+    height: 470px
+    h3
+      font-size: em(50)
+  .begin-now
+    h2
+      font-size: em(50)
+  .prices
+    left: 3px
+
+// reverse
++m-max-wh(568, 320)
+  .procent-90
+    p
+      margin-top: -15px
+  .how-it-goes-img
+    display: none
+  .how-it-goes-img-mobile
+    display: block
+    margin-top: 20px
+  .hat
+    height: auto
+// =================================================
+
+
+// Samsung Galaxy S2
+// 320x533
+// =================================================
++m-max-wh(320, 533)
+// reverse
++m-max-wh(533, 320)
+  .hat
+    height: auto
+    h1
+      font-size: em(59)
+  .quote-1
+    &::before
+      top: -85%
+    &::after
+      margin-top: -30px
+  .procent-90
+    p
+      margin-top: -40px
+  .prices
+    left: 5px
+  .how-it-goes-img-mobile
+    margin-top: 20px
+// =================================================
+
+
+// Apple iPhone 3/4
+// 320x480
+// =================================================
++m-max-wh(320, 480)
+  .hat
+    height: auto
+// reverse
++m-max-wh(480, 320)
+  .hat
+    h1
+      font-size: em(51)
+  .header-underlined
+    font-size: em(32)
+  .quote-2
+    &::before
+      top: -55%
+  .procent-90
+    p
+      margin-top: -60px
+  .packet
+    width: 60%
+  .prices
+    left: 10px
+  .true-leader
+    h1
+      font-size: em(50)
+// =================================================
+
+
+// BlackBerry 8300
+// 320x240
+// =================================================
++m-max-wh(320, 240)
+// reverse
++m-max-wh(240, 320)
+// =================================================
+
+
+// Motorola RAZR V3m
+// 176x220
+// =================================================
++m-max-wh(176, 220)
+// reverse
++m-max-wh(220, 176)
+// =================================================

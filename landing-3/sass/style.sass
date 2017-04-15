@@ -1,0 +1,270 @@
+// COLORS
+$orange: #dc5b07
+$black: #3c3730
+$light-yellow: #f7f8d0
+$light-green: #9dae9c
+
+
+// FONTS
+@font-face
+  font-family: BebasBold
+  src: url('../fonts/BebasNeueBold/BebasNeueBold.eot')
+  src: url('../fonts/BebasNeueBold/BebasNeueBold.woff') format('woff'), url('../fonts/BebasNeueBold/BebasNeueBold.ttf') format('truetype'), url('../fonts/BebasNeueBold/BebasNeueBold.svg') format('svg')
+  font-weight: 700
+  font-style: normal
+
+@import url('https://fonts.googleapis.com/css?family=PT+Sans&subset=cyrillic')
+
+body
+  font-size: 16px
+  margin: 0
+  overflow: hidden
+  height: 100%
+
+header
+  background-color: $light-yellow
+
+h1
+  margin: 0
+  margin-top: 0.7em
+  color: $orange
+  font-size: 3.250em
+  line-height: 1.135
+  font-family: BebasBold
+  letter-spacing: 0.067em
+  text-transform: uppercase
+  position: relative
+
+.heading-captain, .heading-own, .heading-life
+  position: relative
+  display: inline-block
+  color: $light-yellow
+  z-index: 1
+
+.heading-own, .heading-life
+  margin-left: 10px
+
+.heading-captain::before, .heading-own::before, .heading-life::before
+  position: absolute
+  content: ''
+  display: block
+  background-color: $orange
+  height: 1.1em
+  width: 107%
+  margin-left: -0.16em
+  margin-top: -2px
+  z-index: -1
+
+.heading-life::before
+  width: 110%
+
+.heading-sec-part
+  color: $black
+
+.heading-free
+  display: inline-block
+
+.heading-free::after
+  position: absolute
+  content: ''
+  display: block
+  background: $orange
+  height: 0.1em
+  max-width: 4.81em
+  width: 100%
+  margin-top: -0.21em
+  margin-left: 0.03em
+
+.arrow
+  position: absolute
+  z-index: 5
+  height: 55%
+  top: 6.25em
+  left: 75%
+
+// MENU
+.menu
+  background-color: $light-green
+  margin-top: 2.75em
+  height: 18em
+  width: 100%
+  max-width: 28em
+  margin-bottom: 1.5%
+
+.menu h2
+  text-align: center
+  color: $light-yellow
+  text-transform: uppercase
+  font-family: BebasBold
+  margin: 0
+  padding-top: 5%
+  font-size: 1.688em
+  line-height: 1.12
+  letter-spacing: 0.054em
+
+//@media screen and (max-width: 1280px) , screen and (max-height: 600px)
+//  .menu
+//    height: 19.2em
+
+.menu form
+  margin-top: 1%
+  text-align: center
+
+.menu form input
+  font-family: 'PT Sans', sans-serif
+  min-height: 2.4375em
+  height: 25%
+  width: 83%
+  margin-top: 0.25em
+  background-color: $light-yellow
+  border: none
+  font-size: 1em
+  padding-left: 0.625em
+
+.menu form input:focus
+  outline: none
+
+.menu form .menu-button
+  -moz-box-shadow: inset 0px 1px 0px 0px #f5d1ba
+  -webkit-box-shadow: inset 0px 1px 0px 0px #f5d1ba
+  box-shadow: inset 0px 1px 0px 0px #f5d1ba
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #f56918), color-stop(1, #c75b18))
+  background: -moz-linear-gradient(top, #f56918 5%, #c75b18 100%)
+  background: -webkit-linear-gradient(top, #f56918 5%, #c75b18 100%)
+  background: -o-linear-gradient(top, #f56918 5%, #c75b18 100%)
+  background: -ms-linear-gradient(top, #f56918 5%, #c75b18 100%)
+  background: linear-gradient(to bottom, #f56918 5%, #c75b18 100%)
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f56918', endColorstr='#c75b18',GradientType=0)
+  background-color: #f56918
+  border: 1px solid #783811
+  display: inline-block
+  cursor: pointer
+  color: #f7f8d0
+  font-family: BebasBold
+  text-transform: uppercase
+  font-size: 1.688em
+  padding-top: 2px
+  text-decoration: none
+  height: 20%
+  letter-spacing: 2.1px
+  margin-top: 0.45em
+  min-height: 1.4375em
+
+.menu form .menu-button:hover
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #c75b18), color-stop(1, #f56918))
+  background: -moz-linear-gradient(top, #c75b18 5%, #f56918 100%)
+  background: -webkit-linear-gradient(top, #c75b18 5%, #f56918 100%)
+  background: -o-linear-gradient(top, #c75b18 5%, #f56918 100%)
+  background: -ms-linear-gradient(top, #c75b18 5%, #f56918 100%)
+  background: linear-gradient(to bottom, #c75b18 5%, #f56918 100%)
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#c75b18', endColorstr='#f56918',GradientType=0)
+  background-color: #c75b18
+
+.menu form .menu-button:active
+  position: relative
+  top: 1px
+// MENU end
+
+// LOCK
+.menu-lock
+  line-height: 1
+
+.lock-icon
+  height: 1em
+  margin-left: 4px
+  margin-right: 0
+
+.lock-text
+  vertical-align: middle
+  display: inline
+  font-family: 'PT Sans', sans-serif
+  font-size: 0.8em
+  margin-top: 0px
+  line-height: 1
+// LOCK end
+
+// TIMER
+.timer
+  margin-top: 4.175em
+  margin-bottom: 4.175em
+
+.timer-header
+  font-family: BebasBold
+  font-size: 1.375em
+  margin: 0
+  letter-spacing: 1.2px
+  margin-bottom: 8px
+
+#timer920a40d364d62f6715f81c699b2b99ba
+  text-align: left !important
+
+// ELENA BIO
+.elena-bio
+  font-family: BebasBold
+  font-size: 1.375em
+  margin: 0
+  letter-spacing: 0.055em
+  text-align: right
+  line-height: 1.275
+  color: $black
+  margin-top: 12%
+
+.elena-bio-acc
+  color: $orange
+  display: inline-block
+
+.elena-bio-acc::after
+  position: absolute
+  content: ''
+  display: block
+  background: $orange
+  height: 0.12em
+  max-width: 12.1em
+  width: 100%
+  margin-top: -0.16em
+// ELENA BIO end
+
+// FOOTER
+footer
+  background-color: $light-green
+  height: 100%
+
+  h5
+    margin: 0
+    margin-top: 2em
+    font-family: BebasBold
+    font-size: 1.375em
+    color: $black
+    letter-spacing: 1.2px
+
+  p
+    margin-top: 0.9375em
+    margin-bottom: 17.13em
+    font-family: 'PT Sans', sans-serif
+    font-size: 1em
+    color: $black
+
+  p::before
+    content: "!"
+    font-family: BebasBold
+    font-size: 3.75em
+    line-height: 1
+    color: $black
+    float: left
+    position: absolute
+    margin-top: -1px
+    margin-left: -0.4em
+
+  .elena
+    float: left
+    position: fixed
+    height: 46.25em
+    margin-top: -20.0125em
+    clip: rect(0px 390px 715px 0px)
+    z-index: 6
+
+.elena-low
+  display: none
+
+
+@import "media.sass"

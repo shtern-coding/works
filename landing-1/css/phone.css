@@ -1,0 +1,111 @@
+.arrow {
+  position: relative;
+  height: 10%;
+}
+
+.arrow h2 span:not([class="pdf"]):not([class="arrow-book"])::before {
+  top: 0;
+}
+.arrow h2 .arrow-book::before {
+  top: 0;
+  width: 109%
+}
+.arrow h2 img {
+  bottom: 60%;
+}
+
+@media only screen and (max-width: 1281px) and (max-height: 801px) {
+  .hat-middle {
+    margin-top: 11vh;
+  }
+
+  .menu {
+    margin-top: 45px;
+    padding: 0;
+  }
+
+  .scroll-down {
+    position: relative;
+    top: -50px;
+  }
+
+  .arrow-down {
+    position: relative;
+    top: -10px;
+  }
+
+  .elena-photo h2 {
+    margin-top: 70px;
+  }
+}
+
+.icon-item::before {
+  padding-top: 0.5em
+}
+
+.true-leader input {
+  padding-top: 10px
+}
+
+.book input {
+  padding-top: 8px
+}
+
+#more-recalls h5 {
+  padding-top: 8px
+}
+
+.become-leader input {
+  padding-top: 8px
+}
+
+.course-plan h1 {
+  padding-top: 12px;
+}
+
+.course-plan h3 {
+  padding-top: 10px; !important;
+}
+
+.packet-name {
+  padding-top: 11px;
+}
+
+.want {
+  padding-top: 10px;
+}
+
+.prices {
+  padding-left: 0;
+  left: 35px
+}
+
+.middle-part ul {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.menu input {
+  padding-top: 10px;
+}
+
+.phone input {
+  width: 170%;
+}
+
+.phone input {
+   width: 90% !important; 
+}
+
+.middle-part {
+ height: 470px;
+}
+
+@media only screen and (max-width: 416px) and (max-height: 737px) {
+.procent-90 .photos {
+ height: 200px
+}
+.procent-90 p {
+ margin-top: 20px
+}
+ }

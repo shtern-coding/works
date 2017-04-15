@@ -1,0 +1,1557 @@
+@import "MIXINS"
+
+// =============================================================
+// COLORS
+// =============================================================
+$blue: #48586f
+$red: #e65f63
+$blue2: #3889a6
+$dark-blue: #1f1b32
+$blue-light: #d2e5eb
+$dark-blue-2: #2f405c
+// =============================================================
+
+
+$header2-top: em(30)
+
+
+// =============================================================
+// FONTS
+// =============================================================
+@font-face
+  font-family: 'Neris'
+  src: url('../fonts/Neris/Neris.eot')
+  src: local('☺'), url('../fonts/Neris/Neris.woff') format('woff'), url('../fonts/Neris/Neris.ttf') format('truetype'), url('../fonts/Neris/Neris.svg') format('svg')
+  font-weight: 700
+  font-style: normal
+
+@font-face
+  font-family: 'NerisBold'
+  src: url('../fonts/Neris Bold/Neris Bold.eot')
+  src: local('☺'), url('../fonts/Neris Bold/Neris Bold.woff') format('woff'), url('../fonts/Neris Bold/Neris Bold.ttf') format('truetype'), url('../fonts/Neris Bold/Neris Bold.svg') format('svg')
+  font-weight: 700
+  font-style: normal
+
+@font-face
+  font-family: 'NerisSemiBold'
+  src: url('../fonts/Neris SemiBold/Neris SemiBold.eot')
+  src: local('☺'), url('../fonts/Neris SemiBold/Neris SemiBold.woff') format('woff'), url('../fonts/Neris SemiBold/Neris SemiBold.ttf') format('truetype'), url('../fonts/Neris SemiBold/Neris SemiBold.svg') format('svg')
+  font-weight: 700
+  font-style: normal
+
+@font-face
+  font-family: 'NerisBlack'
+  src: url('../fonts/Neris Black/Neris Black.eot')
+  src: local('☺'), url('../fonts/Neris Black/Neris Black.woff') format('woff'), url('../fonts/Neris Black/Neris Black.ttf') format('truetype'), url('../fonts/Neris Black/Neris Black.svg') format('svg')
+  font-weight: 700
+  font-style: normal
+
+@font-face
+  font-family: 'NerisLight'
+  src: url('../fonts/Neris Light/Neris Light.eot')
+  src: local('☺'), url('../fonts/Neris Light/Neris Light.woff') format('woff'), url('../fonts/Neris Light/Neris Light.ttf') format('truetype'), url('../fonts/Neris Light/Neris Light.svg') format('svg')
+  font-weight: 700
+  font-style: normal
+
+@font-face
+  font-family: 'NerisLightItalic'
+  src: url('../fonts/Neris Light Italic/Neris Light Italic.eot')
+  src: local('☺'), url('../fonts/Neris Light Italic/Neris Light Italic.woff') format('woff'), url('../fonts/Neris Light Italic/Neris Light Italic.ttf') format('truetype'), url('../fonts/Neris Light Italic/Neris Light Italic.svg') format('svg')
+  font-weight: 700
+  font-style: normal
+
+@font-face
+  font-family: 'NerisItalic'
+  src: url('../fonts/Neris Italic/Neris Italic.eot')
+  src: local('☺'), url('../fonts/Neris Italic/Neris Italic.woff') format('woff'), url('../fonts/Neris Italic/Neris Italic.ttf') format('truetype'), url('../fonts/Neris Italic/Neris Italic.svg') format('svg')
+  font-weight: 700
+  font-style: normal
+// =============================================================
+
+
+// =============================================================
+// SPRITES
+// =============================================================
+@import "sprites"
+// =============================================================
+
+
+// =============================================================
+// HTML
+// =============================================================
+
+html, body
+  margin: 0
+  padding: 0
+  height: 100%
+
+body
+  font-size: 16px
+  //-webkit-font-smoothing: none
+
+.hat .container
+  width: 90em
+
+.container
+  width: 74em
+
+.hat h4
+  font-family: 'NerisBlack'
+  font-size: 2.25em
+  letter-spacing: ls(60)
+  margin: 0
+  margin-top: 2.5%
+  color: $dark-blue
+
+.hat hr
+  border: none
+  color: $dark-blue
+  background-color: $dark-blue
+  height: 1px
+  margin: 0
+  opacity: 0.7
+
+.hat h1
+  font-family: 'NerisBlack'
+  font-size: 5.3375em
+  letter-spacing: ls(120)
+  margin: 0
+
+  color: $dark-blue
+  line-height: 1.08
+
+.hat-middle
+  margin-top: 120px
+
+.hat
+  background: url('../imgs/background.jpg') center center no-repeat
+  background-size: cover
+  height: 900px
+  height: 100vh
+
+.scroll-down
+  width: 100px
+  float: right
+  position: absolute
+  right: 30px
+  top: -30px
+  h6
+    color: $dark-blue
+    font-size: 0.92em
+    font-family: 'NerisBlack'
+    letter-spacing: ls(20)
+    text-align: center
+    margin: 0
+    margin-bottom: 14px
+
+  .arrow-down
+    background-position: 0 94.010889%
+    background-size: 322.222222%
+    height: 70px
+    display: block
+    margin: 0 auto
+
+.buy .menu-button
+  -moz-box-shadow: inset 0px 1px 0px 0px #f0c0bb
+  -webkit-box-shadow: inset 0px 1px 0px 0px #f0c0bb
+  box-shadow: inset 0px 1px 0px 0px #f0c0bb
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #dc4854), color-stop(1, #dc4854))
+  background: -moz-linear-gradient(top, #dc4854 5%, #dc4854 100%)
+  background: -webkit-linear-gradient(top, #dc4854 5%, #dc4854 100%)
+  background: -o-linear-gradient(top, #dc4854 5%, #dc4854 100%)
+  background: -ms-linear-gradient(top, #dc4854 5%, #dc4854 100%)
+  background: linear-gradient(to bottom, #dc4854 5%, #dc4854 100%)
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#dc4854', endColorstr='#dc4854',GradientType=0)
+  background-color: #dc4854
+  border: 1px solid #ab2f24
+  display: inline-block
+  cursor: pointer
+  color: #fff
+  font-family: 'NerisBlack'
+  text-transform: uppercase
+  font-size: em(22)
+  padding-top: 0
+  text-decoration: none
+  height: 50px
+  letter-spacing: 2.1px
+  margin-top: 20px
+  line-height: 1
+  padding-left: 0
+  width: 280px
+
+.buy .menu-button:hover
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #dc423d), color-stop(1, #dc423d))
+  background: -moz-linear-gradient(top, #dc423d 5%, #dc423d 100%)
+  background: -webkit-linear-gradient(top, #dc423d 5%, #dc423d 100%)
+  background: -o-linear-gradient(top, #dc423d 5%, #dc423d 100%)
+  background: -ms-linear-gradient(top, #dc423d 5%, #dc423d 100%)
+  background: linear-gradient(to bottom, #dc423d 5%, #dc423d 100%)
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#dc4854', endColorstr='#dc4854',GradientType=0)
+  background-color: #dc423d
+  color: #fff
+// ====================
+
+
+
+// ====================
+// ARROW
+// ====================
+.arrow
+  position: relative
+  height: 10%
+
+.arrow h2
+  font-family: 'NerisBlack'
+  font-size: 1.875em
+  line-height: 1.2
+  letter-spacing: ls(90)
+  position: relative
+
+  span:not([class="pdf"]):not([class="arrow-book"])
+    position: relative
+    display: inline-block
+    color: #fff
+    z-index: 1
+    +font-back($blue2, 10.4, 1, -0.3, 0.3, $measures: em)
+
+
+  .arrow-book
+    position: relative
+    display: inline-block
+    color: #fff
+    z-index: 1
+
+    &::before
+      position: absolute
+      content: ''
+      display: block
+      background-color: $blue2
+      height: 1em
+      width: 382%
+      max-width: 17em
+      left: -0.3em
+      top: 0.3em
+      z-index: -1
+
+  img
+    height: 55%
+    position: absolute
+    left: 99%
+    bottom: 53%
+    z-index: 3
+// ====================
+
+
+// ====================
+// MENU
+// ====================
+.menu
+  background-color: $blue
+  height: 370px
+  width: 100%
+  margin-top: 80px
+
+.menu h2
+  text-align: center
+  color: #fff
+  text-transform: uppercase
+  font-family: 'NerisBlack'
+  margin: 0
+  padding-top: 6%
+  font-size: 1.3em
+  line-height: 1.3
+  letter-spacing: ls(40)
+
+.menu form
+  height: 63%
+  margin-top: 4.3%
+  text-align: center
+
+.menu form input
+  font-family: 'Neris'
+  font-size: 1.125em
+  font-variant: small-caps
+  min-height: 25px
+  max-width: none
+  height: 24%
+  width: 84%
+  margin-top: 0.35em
+  background-color: #fff
+  border: none
+  font-size: 1em
+  padding-left: 17px
+  padding-bottom: 6px
+  letter-spacing: ls(30)
+
+.menu form input:focus
+  outline: none
+
+.menu form .menu-button
+  -moz-box-shadow: inset 0px 1px 0px 0px #f0c0bb
+  -webkit-box-shadow: inset 0px 1px 0px 0px #f0c0bb
+  box-shadow: inset 0px 1px 0px 0px #f0c0bb
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #dc4854), color-stop(1, #dc4854))
+  background: -moz-linear-gradient(top, #dc4854 5%, #dc4854 100%)
+  background: -webkit-linear-gradient(top, #dc4854 5%, #dc4854 100%)
+  background: -o-linear-gradient(top, #dc4854 5%, #dc4854 100%)
+  background: -ms-linear-gradient(top, #dc4854 5%, #dc4854 100%)
+  background: linear-gradient(to bottom, #dc4854 5%, #dc4854 100%)
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#dc4854', endColorstr='#dc4854',GradientType=0)
+  background-color: #dc4854
+  border: 1px solid #ab2f24
+  display: inline-block
+  cursor: pointer
+  color: #fff
+  font-family: 'NerisBlack'
+  text-transform: uppercase
+  font-size: 1.3em
+  padding-top: -2px
+  text-decoration: none
+  height: 24%
+  letter-spacing: 2.1px
+  margin-top: 4.9%
+  min-height: 1.4375em
+  line-height: 1
+  padding-left: 0
+
+.menu form .menu-button:hover
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #dc423d), color-stop(1, #dc423d))
+  background: -moz-linear-gradient(top, #dc423d 5%, #dc423d 100%)
+  background: -webkit-linear-gradient(top, #dc423d 5%, #dc423d 100%)
+  background: -o-linear-gradient(top, #dc423d 5%, #dc423d 100%)
+  background: -ms-linear-gradient(top, #dc423d 5%, #dc423d 100%)
+  background: linear-gradient(to bottom, #dc423d 5%, #dc423d 100%)
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#dc4854', endColorstr='#dc4854',GradientType=0)
+  background-color: #dc423d
+  color: #fff
+
+.menu form .menu-button:active
+  position: relative
+  top: 1px
+// ====================
+
+
+
+// ====================
+// AFTER HAT
+// ====================
+.after-hat
+  background-color: $blue
+
+  h4
+    color: #fff
+    font-family: 'NerisLight'
+    font-size: 1.125em
+    line-height: 1.555
+    text-align: center
+    margin-bottom: 28%
+    padding: 0 25px 0 25px
+
+  .middle h4
+    position: relative
+    display: inline-block
+    z-index: 1
+    +font-back(#fff, 0.05, 9, -0.7, -0.5, $measures: em)
+
+  .last h4
+    position: relative
+    display: inline-block
+    z-index: 1
+    +font-back(#fff, 0.05, 9, -0.4, -0.5, $measures: em)
+
+  .header-underlined
+
+.growth
+  background-position: 0 95.947476%
+  background-size: 322.222222%
+  display: block
+  margin: 0 auto
+  height: 60px
+  margin-top: 20%
+
+.ppl
+  background-position: 0 97.871859%
+  background-size: 322.222222%
+  display: block
+  margin: 0 auto
+  height: 60px
+  margin-top: 20%
+
+.speed
+  background-position: 0 100%
+  background-size: 322.222222%
+  display: block
+  margin: 0 auto
+  height: 60px
+  margin-top: 19%
+// ====================
+
+
+// ====================
+// ICONS
+// ====================
+.header-underlined
+  font-family: 'NerisBlack'
+  letter-spacing: ls(60)
+  line-height: 1.307
+  font-size: 2.4375em
+  color: $blue
+  margin: 0
+  margin-top: $header2-top
+  position: relative
+  display: block
+  z-index: 1
+  text-transform: uppercase
+  &::after
+    position: absolute
+    content: ''
+    display: block
+    background-color: $blue
+    height: 8px
+    width: 142%
+    max-width: 74px
+    bottom: -21px
+    z-index: -1
+
+
+.icons
+
+  p
+    font-family: 'NerisLight'
+
+  img
+    height: 40%
+    display: block
+    margin: 0 auto
+    margin-top: 90px
+    margin-bottom: 35px
+
+  .algoritm1
+    background-position: 0 20.944367%
+    background-size: 123.404255%
+
+  .algoritm2
+    background-position: 0 5.236092%
+    background-size: 117.408907%
+
+  .algoritm4
+    background-position: 0 57.597008%
+    background-size: 140.096618%
+
+  .algoritm5
+    background-position: 0 73.305283%
+    background-size: 154.255319%
+
+  .algoritm3
+    background-position: 0 78.541374%
+    background-size: 157.608696%
+
+.icon-item
+  position: relative
+  display: inline-block
+  z-index: 1
+  height: 330px
+  &::before
+    position: absolute
+    top: 45px
+    content: '1'
+    color: #fff
+    font-family: 'NerisBlack'
+    text-align: center
+    display: block
+    width: 2.2em
+    height: 2.2em
+    background: $red
+    -moz-border-radius: 50px
+    -webkit-border-radius: 50px
+    border-radius: 50px
+    padding-top: 0.2em
+
+.item-2::before
+  content: '2'
+.item-3::before
+  content: '3'
+.item-4::before
+  content: '4'
+.item-5::before
+  content: '5'
+.item-6::before
+  content: '6'
+.item-7::before
+  content: '7'
+
+.troubles .icon-item::before
+  background: $blue
+
+.quote-1
+  margin-top: 90px
+  font-family: 'NerisBlack'
+  font-size: 1.875em
+  line-height: 1.333
+  position: relative
+  quotes: '\00ab' '\00bb'
+  &::before
+    position: absolute
+    content: open-quote
+    color: $blue
+    font-size: 4.25em
+    top: -92%
+    left: -10%
+  &::after
+    position: absolute
+    content: close-quote
+    color: $blue
+    font-size: 4.25em
+    top: 34%
+    left: 75%
+.troubles
+  .troubles1
+    background-position: 0 68.069191%
+    background-size: 151.041667%
+  .troubles2
+    background-position: 0 83.777466%
+    background-size: 175.757576%
+    height: 130px
+  .troubles3
+    background-position: 0 26.180458%
+    background-size: 123.404255%
+  .troubles4
+    background-position: 0 47.124825%
+    background-size: 131.818182%
+  .troubles5
+    background-position: 0 10.472183%
+    background-size: 119.834711%
+  .troubles6
+    background-position: 0 0%
+    background-size: 100%
+  .troubles7
+    background-position: 0 89.013558%
+    background-size: 210.144928%
+
+.quote-2
+  margin-top: 90px
+  font-family: 'NerisBlack'
+  font-size: 1.875em
+  line-height: 1.333
+  position: relative
+  quotes: '\00ab' '\00bb'
+  &::before
+    position: absolute
+    content: open-quote
+    color: $red
+    font-size: 4.25em
+    top: -76%
+    left: -15%
+  &::after
+    position: absolute
+    content: close-quote
+    color: $red
+    font-size: 4.25em
+    top: 40%
+    left: 80%
+// ====================
+
+
+
+// ====================
+// TRUE LEADER
+// ====================
+.true-leader
+  background: url('../imgs/true-leader.jpg') center center no-repeat
+  background-size: cover
+  margin-top: 6%
+  color: #fff
+
+  .padding
+    height: 45px
+
+  h1
+    font-family: 'NerisBlack'
+    font-size: em(55)
+    letter-spacing: ls(60)
+    line-height: 1.253
+    text-transform: uppercase
+    margin: 50px 0 0 0
+
+  h3
+    font-family: 'NerisBold'
+    font-size: 2.125em
+    letter-spacing: ls(60)
+    line-height: 1.253
+    text-transform: uppercase
+    margin: 15px 0 0 0
+
+  p
+    font-family: 'NerisLight'
+    font-size: 1.4em
+    line-height: lh(37, 24)
+    margin: 40px 0 15px 0
+
+  h4
+    font-size: 1.9em
+    text-align: center
+    border: 1px solid #fff
+    letter-spacing: ls(20)
+    padding: 15px
+    margin: 60px 0 0 0
+
+  input
+    -moz-box-shadow: inset 0px 1px 0px 0px #f0c0bb
+    -webkit-box-shadow: inset 0px 1px 0px 0px #f0c0bb
+    box-shadow: inset 0px 1px 0px 0px #f0c0bb
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #dc4854), color-stop(1, #dc4854))
+    background: -moz-linear-gradient(top, #dc4854 5%, #dc4854 100%)
+    background: -webkit-linear-gradient(top, #dc4854 5%, #dc4854 100%)
+    background: -o-linear-gradient(top, #dc4854 5%, #dc4854 100%)
+    background: -ms-linear-gradient(top, #dc4854 5%, #dc4854 100%)
+    background: linear-gradient(to bottom, #dc4854 5%, #dc4854 100%)
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#dc4854', endColorstr='#dc4854',GradientType=0)
+    background-color: #dc4854
+    border: 1px solid #ab2f24
+    display: inline-block
+    cursor: pointer
+    color: #fff
+    font-family: 'NerisBlack'
+    text-transform: uppercase
+    font-size: 1.9em
+    padding-bottom: 6px
+    text-decoration: none
+    height: 72px
+    letter-spacing: 2.1px
+    margin-top: 4.9%
+    min-height: 1.4375em
+    padding-left: 0
+    width: 100%
+
+  input:hover
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #dc423d), color-stop(1, #dc423d))
+    background: -moz-linear-gradient(top, #dc423d 5%, #dc423d 100%)
+    background: -webkit-linear-gradient(top, #dc423d 5%, #dc423d 100%)
+    background: -o-linear-gradient(top, #dc423d 5%, #dc423d 100%)
+    background: -ms-linear-gradient(top, #dc423d 5%, #dc423d 100%)
+    background: linear-gradient(to bottom, #dc423d 5%, #dc423d 100%)
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#dc4854', endColorstr='#dc4854',GradientType=0)
+    background-color: #dc423d
+    color: #fff
+
+  input:active
+    position: relative
+    top: 1px
+
+
+// ====================
+// BOOK
+// ====================
+.book
+  background-color: $blue-light
+  color: $dark-blue-2
+
+  img
+    width: 74%
+    clip: rect(0px 390px 500px 0px)
+    position: absolute
+
+  .book-row
+    margin-top: 60px
+
+  h2
+    font-family: 'NerisBlack'
+    font-size: 1.9em
+    line-height: lh(45, 34)
+    letter-spacing: ls(60)
+    text-transform: uppercase
+    margin: 0
+
+  h4
+    font-family: 'NerisBold'
+    font-size: 1.4em
+    line-height: lh(34,26)
+    margin-top: 15px
+
+  p
+    font-family: 'NerisLight'
+    margin-bottom: 40px
+
+  .book-form
+    background-color: $blue
+    position: relative
+    z-index: 2
+
+    h3
+      color: #fff
+      margin: 10px 0 5px 0
+
+    hr
+      margin: 0
+      margin-bottom: 10px
+      width: 99%
+
+  input
+    width: 23.4%
+    margin-right: 1.18%
+    padding-left: 10px
+    height: 40px
+    margin-bottom: 18px
+
+  .button
+    -moz-box-shadow: inset 0px 1px 0px 0px #f0c0bb
+    -webkit-box-shadow: inset 0px 1px 0px 0px #f0c0bb
+    box-shadow: inset 0px 1px 0px 0px #f0c0bb
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #dc4854), color-stop(1, #dc4854))
+    background: -moz-linear-gradient(top, #dc4854 5%, #dc4854 100%)
+    background: -webkit-linear-gradient(top, #dc4854 5%, #dc4854 100%)
+    background: -o-linear-gradient(top, #dc4854 5%, #dc4854 100%)
+    background: -ms-linear-gradient(top, #dc4854 5%, #dc4854 100%)
+    background: linear-gradient(to bottom, #dc4854 5%, #dc4854 100%)
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#dc4854', endColorstr='#dc4854',GradientType=0)
+    background-color: #dc4854
+    border: 1px solid #ab2f24
+    display: inline-block
+    cursor: pointer
+    color: #fff
+    font-family: 'NerisBlack'
+    text-transform: uppercase
+    font-size: em(15)
+    padding-bottom: 2px
+    text-decoration: none
+    letter-spacing: 2.1px
+    min-height: 1.4375em
+    padding-left: 0
+    margin-left: 3px
+
+  .button:hover
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #dc423d), color-stop(1, #dc423d))
+    background: -moz-linear-gradient(top, #dc423d 5%, #dc423d 100%)
+    background: -webkit-linear-gradient(top, #dc423d 5%, #dc423d 100%)
+    background: -o-linear-gradient(top, #dc423d 5%, #dc423d 100%)
+    background: -ms-linear-gradient(top, #dc423d 5%, #dc423d 100%)
+    background: linear-gradient(to bottom, #dc423d 5%, #dc423d 100%)
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#dc4854', endColorstr='#dc4854',GradientType=0)
+    background-color: #dc423d
+    color: #fff
+
+  .button:active
+    position: relative
+    top: 1px
+
+// ====================
+
+
+
+// ====================
+// STATISTIC
+// ====================
+.statistic
+
+  img
+    height: 140px
+    display: block
+    margin: 0 auto
+    margin-top: 85px
+    margin-bottom: 35px
+
+  p
+    font-family: 'NerisLight'
+
+  .go-test
+    font-size: 1.625em
+    font-family: 'NerisBold'
+    text-align: center
+    text-transform: uppercase
+    position: relative
+    color: #fff
+    margin: 1.8em 0 3.3em 0
+
+    span
+      position: relative
+      display: inline-block
+      z-index: 1
+      background-color: $red
+      padding: 0 7px
+      margin: 2px -4px
+// ====================
+
+
+
+// ====================
+// 90-PROCENT
+// ====================
+.procent-90
+  background-color: $blue
+
+  .photos
+    height: 300px
+    width: 100%
+    margin-top: 30px
+    margin-bottom: 0
+
+  h3
+    font-family: 'NerisBlack'
+    letter-spacing: ls(60)
+    line-height: 1.307
+    font-size: 2.4375em
+    margin: 0
+    margin-top: 3%
+    color: #fff
+    text-transform: uppercase
+
+  img
+    width: 100%
+
+  p
+    color: #fff
+    font-size: 1.625em
+    font-family: NerisLight
+    margin-bottom: 21%
+
+.cycle-pager
+
+.space
+
+
+// ====================
+
+
+
+// ====================
+// RECALLS
+// ====================
+.recall-item
+  margin-top: 80px
+  padding-right: 60px
+
+  .name
+    font-size: em(29)
+    line-height: lh(35, 31)
+    margin-bottom: 0
+    line-height: lh(34, 29)
+
+  .profession
+    margin: 0
+    font-size: em(19)
+    line-height: lh(24,19)
+    margin-top: 9px
+    margin-bottom: 0
+
+  .recall
+    margin-top: 8px
+    font-family: NerisItalic
+    letter-spacing: ls(20)
+    line-height: lh(27,17)
+    font-size: em(15)
+
+.recalls
+  .button
+    margin: 40px 0 0 0
+    background-color: $blue
+    height: 40px
+    cursor: pointer
+
+    h5
+      color: #fff
+      text-align: center
+      font-size: em(21)
+      font-family: NerisBlack
+      letter-spacing: ls(40)
+      margin: 0
+      text-decoration: none
+      cursor: pointer
+
+  .button
+    -moz-box-shadow: inset 0px 1px 0px 0px #c4def6
+    -webkit-box-shadow: inset 0px 1px 0px 0px #c4def6
+    box-shadow: inset 0px 1px 0px 0px #c4def6
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #48586f), color-stop(1, #48586f))
+    background: -moz-linear-gradient(top, #48586f 5%, #48586f 100%)
+    background: -webkit-linear-gradient(top, #48586f 5%, #48586f 100%)
+    background: -o-linear-gradient(top, #48586f 5%, #48586f 100%)
+    background: -ms-linear-gradient(top, #48586f 5%, #48586f 100%)
+    background: linear-gradient(to bottom, #48586f 5%, #48586f 100%)
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#dc4854', endColorstr='#dc4854',GradientType=0)
+    background-color: $blue
+    border: 1px solid #2a3a63
+    display: inline-block
+    cursor: pointer
+    color: #fff
+    font-family: 'NerisBlack'
+    text-transform: uppercase
+    font-size: em(15)
+    padding-bottom: 0
+    padding-top: 3px
+    text-decoration: none
+    padding-left: 0
+    width: 100%
+
+  .button:hover
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #3f5373), color-stop(1, #dc423d))
+    background: -moz-linear-gradient(top, #3f5373 5%, #3f5373 100%)
+    background: -webkit-linear-gradient(top, #3f5373 5%, #3f5373 100%)
+    background: -o-linear-gradient(top, #3f5373 5%, #3f5373 100%)
+    background: -ms-linear-gradient(top, #3f5373 5%, #3f5373 100%)
+    background: linear-gradient(to bottom, #3f5373 5%, #3f5373 100%)
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#dc4854', endColorstr='#dc4854',GradientType=0)
+    background-color: #394e73
+    color: #fff
+
+.hide-recalls
+  display: none
+
+// ====================
+
+
+
+// ====================
+// BECOME-LEADER
+// ====================
+.become-leader
+  margin-top: 7.8em
+  background-color: $blue
+  text-align: center
+  width: 100%
+
+  h2
+    margin-top: 4.5%
+    color: #fff
+    font-family: NerisBlack
+    font-size: em(37)
+    text-align: center
+    letter-spacing: ls(90)
+    margin-bottom: 0
+
+  input
+    -moz-box-shadow: inset 0px 1px 0px 0px #f0c0bb
+    -webkit-box-shadow: inset 0px 1px 0px 0px #f0c0bb
+    box-shadow: inset 0px 1px 0px 0px #f0c0bb
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #dc4854), color-stop(1, #dc4854))
+    background: -moz-linear-gradient(top, #dc4854 5%, #dc4854 100%)
+    background: -webkit-linear-gradient(top, #dc4854 5%, #dc4854 100%)
+    background: -o-linear-gradient(top, #dc4854 5%, #dc4854 100%)
+    background: -ms-linear-gradient(top, #dc4854 5%, #dc4854 100%)
+    background: linear-gradient(to bottom, #dc4854 5%, #dc4854 100%)
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#dc4854', endColorstr='#dc4854',GradientType=0)
+    background-color: #dc4854
+    border: 1px solid #ab2f24
+    display: inline-block
+    cursor: pointer
+    color: #fff
+    font-family: 'NerisBlack'
+    text-transform: uppercase
+    font-size: em(22)
+    padding-top: -2px
+    text-decoration: none
+    height: 52px
+    letter-spacing: 2.1px
+    margin: 0 auto
+    margin-top: 20px
+    margin-bottom: 44px
+    min-height: 1.4375em
+    line-height: 1
+    padding-left: 0
+    width: 300px
+
+  input:hover
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #dc423d), color-stop(1, #dc423d))
+    background: -moz-linear-gradient(top, #dc423d 5%, #dc423d 100%)
+    background: -webkit-linear-gradient(top, #dc423d 5%, #dc423d 100%)
+    background: -o-linear-gradient(top, #dc423d 5%, #dc423d 100%)
+    background: -ms-linear-gradient(top, #dc423d 5%, #dc423d 100%)
+    background: linear-gradient(to bottom, #dc423d 5%, #dc423d 100%)
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#dc4854', endColorstr='#dc4854',GradientType=0)
+    background-color: #dc423d
+    color: #fff
+
+  input:active
+    position: relative
+    top: 1px
+// ====================
+
+
+
+// ====================
+// ELENA
+// ====================
+.elena-photo
+  background-color: $blue-light
+  width: 100%
+  color: $blue
+  text-transform: uppercase
+
+  .col-sm-6
+    padding: 0
+
+  .headings
+    margin-left: 55px
+
+  h5
+    font-size: em(18)
+    font-family: Neris
+    letter-spacing: ls(80)
+    margin-top: 23%
+    margin-bottom: 3%
+
+  h1
+    font-family: NerisBlack
+    font-size: em(64)
+    line-height: lh(68,64)
+    margin-top: 5px
+    letter-spacing: ls(60)
+
+  h2
+    margin-top: 25%
+    margin-bottom: 0
+    font-family: Neris
+    font-size: em(40)
+    line-height: lh(51, 40)
+    letter-spacing: ls(60)
+
+  .container
+    width: 100%
+    padding: 0
+    margin: 0
+
+  .row
+    margin: 0
+    padding: 0
+
+  .col-md-6
+    margin: 0
+    padding: 0
+
+  img
+    width: 100%
+
+.elena
+  p
+    margin-top: em(50)
+    font-size: em(18)
+    font-family: NerisLight
+
+  span
+    font-family: NerisBold
+
+  .and-now
+    background-color: $blue-light
+    padding: em(35)
+    padding-top: em(30)
+    font-family: NerisLightItalic
+    font-size: em(17)
+    letter-spacing: ls(20)
+
+    span
+      font-family: NerisBold
+
+.cycle-controll
+  .litlle-arrow
+    margin-top: 0
+    width: 28px
+    cursor: pointer
+
+  #next
+    transform: scale(-1, 1)
+    -webkit-transform: scale(-1, 1)
+
+
+// ====================
+// COURSE-PLAN
+// ====================
+.course-plan
+  .header
+    margin-top: 80px
+    background-color: $blue
+
+    h1
+      color: #fff
+      font-size: em(63)
+      font-family: NerisBlack
+      letter-spacing: ls(60)
+      margin: 9px 0 16px 0
+
+.lessons
+  h3
+    background-color: $blue
+    color: #fff
+    text-transform: uppercase
+    letter-spacing: ls(60)
+    padding: 4px 0 7px 0
+    margin-top: 28px
+
+  .lesson-number
+    text-align: center
+    font-family: NerisLight
+
+  .lesson-descrp
+    margin-left: 20px
+    font-family: NerisBold
+    position: relative
+    left: -4.7%
+    padding-left: 3%
+    width: 103%
+
+  .about-header
+    color: $blue
+    font-size: em(21)
+    margin: 0
+
+  .about
+    padding-left: 20px
+
+    li
+      list-style-type: none
+      font-family: NerisLight
+      line-height: lh(25, 18)
+      font-size: em(17)
+      margin-bottom: 15px
+      position: relative
+
+      &::before
+        content: '\2714'
+        color: $red
+        position: absolute
+        left: -8%
+
+  .bonus
+    li
+      font-family: NerisLightItalic
+      line-height: lh(25, 16)
+      font-size: em(16)
+      letter-spacing: ls(20)
+      margin-bottom: 15px
+      list-style-type: decimal
+
+.lessons
+  margin-bottom: 45px
+
+  input
+    -moz-box-shadow: inset 0px 1px 0px 0px #f0c0bb
+    -webkit-box-shadow: inset 0px 1px 0px 0px #f0c0bb
+    box-shadow: inset 0px 1px 0px 0px #f0c0bb
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #dc4854), color-stop(1, #dc4854))
+    background: -moz-linear-gradient(top, #dc4854 5%, #dc4854 100%)
+    background: -webkit-linear-gradient(top, #dc4854 5%, #dc4854 100%)
+    background: -o-linear-gradient(top, #dc4854 5%, #dc4854 100%)
+    background: -ms-linear-gradient(top, #dc4854 5%, #dc4854 100%)
+    background: linear-gradient(to bottom, #dc4854 5%, #dc4854 100%)
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#dc4854', endColorstr='#dc4854',GradientType=0)
+    background-color: #dc4854
+    border: 1px solid #ab2f24
+    display: inline-block
+    cursor: pointer
+    color: #fff
+    font-family: 'NerisBlack'
+    text-transform: uppercase
+    font-size: em(22)
+    padding-top: -2px
+    text-decoration: none
+    height: 52px
+    letter-spacing: 2.1px
+    margin: 0 auto
+    margin-top: 60px
+    margin-bottom: 44px
+    min-height: 1.4375em
+    line-height: 1
+    padding-left: 0
+    width: 100%
+
+  input:hover
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #dc423d), color-stop(1, #dc423d))
+    background: -moz-linear-gradient(top, #dc423d 5%, #dc423d 100%)
+    background: -webkit-linear-gradient(top, #dc423d 5%, #dc423d 100%)
+    background: -o-linear-gradient(top, #dc423d 5%, #dc423d 100%)
+    background: -ms-linear-gradient(top, #dc423d 5%, #dc423d 100%)
+    background: linear-gradient(to bottom, #dc423d 5%, #dc423d 100%)
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#dc4854', endColorstr='#dc4854',GradientType=0)
+    background-color: #dc423d
+    color: #fff
+
+  input:active
+    position: relative
+    top: 1px
+// ====================
+
+
+
+// ====================
+// PHONE
+// ====================
+.phone
+  margin-top: 60px
+  background: url('../imgs/phone.jpg') center center no-repeat
+  background-size: cover
+
+  h3
+    font-size: em(64)
+    font-family: NerisBlack
+    letter-spacing: ls(60)
+    color: $dark-blue-2
+    text-transform: uppercase
+    line-height: lh(81,64)
+    margin-top: 110px
+    margin-bottom: 125px
+
+  form
+    height: 100%
+    margin-top: 130px
+    input
+      display: block
+      width: 100%
+      height: 45px
+      margin-top: 15px
+      padding-left: 15px
+
+  form input:focus
+    outline: none
+
+  form .menu-button
+    -moz-box-shadow: inset 0px 1px 0px 0px #f0c0bb
+    -webkit-box-shadow: inset 0px 1px 0px 0px #f0c0bb
+    box-shadow: inset 0px 1px 0px 0px #f0c0bb
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #dc4854), color-stop(1, #dc4854))
+    background: -moz-linear-gradient(top, #dc4854 5%, #dc4854 100%)
+    background: -webkit-linear-gradient(top, #dc4854 5%, #dc4854 100%)
+    background: -o-linear-gradient(top, #dc4854 5%, #dc4854 100%)
+    background: -ms-linear-gradient(top, #dc4854 5%, #dc4854 100%)
+    background: linear-gradient(to bottom, #dc4854 5%, #dc4854 100%)
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#dc4854', endColorstr='#dc4854',GradientType=0)
+    background-color: #dc4854
+    border: 1px solid #ab2f24
+    display: inline-block
+    cursor: pointer
+    color: #fff
+    font-family: 'NerisBlack'
+    text-transform: uppercase
+    font-size: 1.3em
+    padding-top: -2px
+    text-decoration: none
+    height: 60px
+    letter-spacing: 2.1px
+    margin-top: 7%
+    min-height: 1.4375em
+    line-height: 1
+    padding-left: 0
+
+  form .menu-button:hover
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #dc423d), color-stop(1, #dc423d))
+    background: -moz-linear-gradient(top, #dc423d 5%, #dc423d 100%)
+    background: -webkit-linear-gradient(top, #dc423d 5%, #dc423d 100%)
+    background: -o-linear-gradient(top, #dc423d 5%, #dc423d 100%)
+    background: -ms-linear-gradient(top, #dc423d 5%, #dc423d 100%)
+    background: linear-gradient(to bottom, #dc423d 5%, #dc423d 100%)
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#dc4854', endColorstr='#dc4854',GradientType=0)
+    background-color: #dc423d
+    color: #fff
+
+  form .menu-button:active
+    position: relative
+    top: 1px
+// ====================
+
+
+
+// ====================
+// HOW-IT-GOES
+// ====================
+.how-it-goes
+  color: #fff
+
+.meta-block
+  height: 160px
+  display: block
+  margin-bottom: 70px
+  width: 100%
+
+  .block
+    display: block
+    width: 500px
+    height: 300px
+
+    .text
+      background-color: $blue
+      padding: 18px 18px 28px 18px
+      display: block
+      position: relative
+      z-index: 2
+
+.first-block
+  margin-top: 100px
+
+  h4, h6
+    padding-left: 5px
+    font-size: em(19)
+    margin: 0
+    line-height: 1.5
+
+  h4
+    font-family: NerisBlack
+    text-transform: uppercase
+    letter-spacing: ls(30)
+
+  h6
+    font-family: NerisLight
+
+.block-img
+  width: 35%
+  opacity: 0.2
+  position: relative
+  z-index: 1
+  left: 84%
+  top: -200px
+
+.right
+  float: right
+
+  .block-img
+    left: -29%
+
+
+.learning1
+  background-position: 0 49.251945%
+  background-size: 164.333333%
+  width: 50%
+.learning2
+  background-position: 0 57.142857%
+  background-size: 164.333333%
+.learning3
+  background-position: 0 69.925542%
+  background-size: 164.333333%
+  top: -16em
+.learning4
+  background-position: 0 80.757389%
+  background-size: 164.333333%
+.learning5
+  background-position: 0 90.75969%
+  background-size: 164.333333%
+.learning6
+  background-position: 0 100%
+  background-size: 164.333333%
+
+.how-it-goes
+  .go-test
+    font-size: 1.625em
+    font-family: 'NerisBold'
+    text-align: center
+    text-transform: uppercase
+    position: relative
+    color: #fff
+    margin: 20px 0 80px 0
+
+  span
+    position: relative
+    display: inline-block
+    z-index: 1
+    background-color: $red
+    padding: 0 7px
+    margin: 2px -4px
+
+.block-arrows
+  position: absolute
+  z-index: 5
+  width: 25%
+
+.arrow1
+  background-position: 0 10.771605%
+  background-size: 127.720207%
+  top: -3em
+  right: 25em
+
+.arrow2
+  background-position: 0 20.675633%
+  background-size: 133.243243%
+  top: 12em
+  left: 21em
+  width: 25%
+
+.arrow3
+  background-position: 0 31.75%
+  background-size: 133.243243%
+  top: 27em
+  right: 25em
+
+.arrow4
+  background-position: 0 0%
+  background-size: 100%
+.arrow5
+  background-position: 0 41.783751%
+  background-size: 163.787375%
+
+.first-block
+  display: none
+
+.how-it-goes-img
+  width: 95%
+
+.how-it-goes-img-mobile
+  display: none
+  width: 100%
+
+
+
+// ====================
+// BEGIN-NOW
+// ====================
+.begin-now
+  background-color: $blue
+
+  h2
+    font-family: NerisBlack
+    font-size: em(60)
+    letter-spacing: ls(70)
+    color: #fff
+    margin: 40px 0 0 0
+
+  hr
+    margin: 0
+
+  .header-underlined
+    color: #fff
+    margin-bottom: 40px
+    &::after
+      background-color: #fff
+
+  p
+    color: #fff
+    font-family: Neris
+    font-size: em(17)
+    margin-top: 110px
+    border: 1px solid #fff
+    padding: 20px
+
+    a
+      color: #fff
+      text-decoration: underline
+
+  input
+    display: block
+    width: 70%
+    height: 40px
+    padding-left: 15px
+    margin-bottom: 8px
+    font-size: em(16)
+    margin-top: 1px
+
+  label
+    color: #fff
+    margin-bottom: 30px
+    font-family: Neris
+
+  img
+    margin-top: 40px
+
+.packet
+  .packet-name
+    color: #fff
+    font-family: NerisBold
+    font-size: em(37)
+    text-transform: uppercase
+    letter-spacing: ls(50)
+    background-color: #3986a4
+    text-align: center
+    margin: 0
+    padding-bottom: 6px
+
+  .want
+    -moz-box-shadow: inset 0px 1px 0px 0px #f0c0bb
+    -webkit-box-shadow: inset 0px 1px 0px 0px #f0c0bb
+    box-shadow: inset 0px 1px 0px 0px #f0c0bb
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #dc4854), color-stop(1, #dc4854))
+    background: -moz-linear-gradient(top, #dc4854 5%, #dc4854 100%)
+    background: -webkit-linear-gradient(top, #dc4854 5%, #dc4854 100%)
+    background: -o-linear-gradient(top, #dc4854 5%, #dc4854 100%)
+    background: -ms-linear-gradient(top, #dc4854 5%, #dc4854 100%)
+    background: linear-gradient(to bottom, #dc4854 5%, #dc4854 100%)
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#dc4854', endColorstr='#dc4854',GradientType=0)
+    background-color: #dc4854
+    border: 1px solid #ab2f24
+    display: inline-block
+    cursor: pointer
+    color: #fff
+    font-family: 'NerisBlack'
+    text-transform: uppercase
+    padding-bottom: 2px
+    text-decoration: none
+    letter-spacing: 2.1px
+    padding-left: 0
+    width: 100%
+    font-family: NerisBold
+    font-size: em(26)
+    letter-spacing: ls(50)
+    text-align: center
+    margin: 0
+    padding-bottom: 6px
+    height: 50px
+
+  .want:hover
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #dc423d), color-stop(1, #dc423d))
+    background: -moz-linear-gradient(top, #dc423d 5%, #dc423d 100%)
+    background: -webkit-linear-gradient(top, #dc423d 5%, #dc423d 100%)
+    background: -o-linear-gradient(top, #dc423d 5%, #dc423d 100%)
+    background: -ms-linear-gradient(top, #dc423d 5%, #dc423d 100%)
+    background: linear-gradient(to bottom, #dc423d 5%, #dc423d 100%)
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#dc4854', endColorstr='#dc4854',GradientType=0)
+    background-color: #dc423d
+    color: #fff
+
+
+.middle-part
+  background-color: #dde8ea
+  margin: 0
+  height: 460px
+  position: relative
+
+  hr
+    border: none
+    color: $blue
+    background-color: $blue
+    height: 1px
+    width: 85%
+    opacity: .5
+
+  ul
+    list-style-type: none
+    margin: 0
+    padding-top: 30px
+
+  li
+    font-family: NerisSemiBold
+    font-size: em(18)
+    letter-spacing: ls(40)
+    font-variant: small-caps
+    margin-bottom: 6px
+
+.old-price, .new-price, .time
+  text-align: center
+  margin: 0
+  font-size: em(18)
+
+.old-price
+  font-variant: small-caps
+  font-family: NerisLight
+  letter-spacing: ls(40)
+  margin-top: 70px
+  margin-bottom: 2px
+
+  span
+    text-decoration: line-through
+
+.new-price
+  color: $red
+  font-family: NerisBlack
+  font-variant: small-caps
+  margin-bottom: 2px
+
+.time
+  font-family: NerisLightItalic
+  padding-bottom: 30px
+
+.footer
+  margin-top: 80px
+  background-color: $dark-blue-2
+  height: 110px
+
+.prices
+  position: absolute
+  bottom: 0
+  left: 49px
+
+
+
+@import "media"

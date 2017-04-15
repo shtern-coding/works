@@ -1,0 +1,32 @@
+/* pager */
+.cycle-pager {
+    text-align: center;
+    width: 100%;
+    z-index: 500;
+    overflow: hidden;
+    margin-top: 0;
+
+}
+.cycle-pager span {
+    line-height: 0.8;
+    font-family: arial;
+    font-size: 73px;
+    width: 29px;
+    height: 29px;
+    display: inline-block;
+    color: #fff;
+    cursor: pointer;
+}
+.cycle-pager span.cycle-pager-active { color: #e65f63;}
+.cycle-pager > * { cursor: pointer;}
+
+/*
+    media queries
+    some style overrides to make things more pleasant on mobile devices
+*/
+
+@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {
+    .cycle-slideshow { width: 200px;}
+    .cycle-overlay { padding: 4px }
+    .cycle-caption { bottom: 4px; right: 4px }
+}

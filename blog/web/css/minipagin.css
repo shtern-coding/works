@@ -1,0 +1,24 @@
+.pagin {
+    /*text-align: center;*/
+    margin: 23px 0 48px -11px;
+}
+
+.arr {
+    margin: 0 10px 0 10px;
+    font-size: 80px;
+    color: #e14129;
+}
+
+.arr:hover {
+    color: #d77567;
+}
+
+.arr:active {
+    text-decoration: none;
+    color: #e14129;
+}
+
+.arr::selection {
+    text-decoration: none;
+    color: #e14129;
+}

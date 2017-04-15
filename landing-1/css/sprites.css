@@ -1,0 +1,69 @@
+.troubles6, .algoritm2, .troubles5, .statistic1, .algoritm1,
+.troubles3, .statistic2, .statistic5, .statistic4, .troubles4,
+.statistic6, .algoritm4, .statistic3, .troubles1, .algoritm5,
+.algoritm3, .troubles2, .troubles7, .litlle-arrow, .arrow-down,
+.growth, .ppl, .speed {
+  max-width: 100%;
+  background-size: 100%;
+  background-image: url("../imgs/sprites.png");
+}
+
+.statistic1 {
+  background-position: 0 15.70828%;
+  background-size: 121.84874%;
+}
+
+.statistic2 {
+  background-position: 0 31.41655%;
+  background-size: 125%;
+}
+
+.statistic5 {
+  background-position: 0 36.65264%;
+  background-size: 125.54113%;
+}
+
+.statistic4 {
+  background-position: 0 41.88873%;
+  background-size: 130.63063%;
+}
+
+.statistic6 {
+  background-position: 0 52.36092%;
+  background-size: 133.02752%;
+}
+
+.statistic3 {
+  background-position: 0 62.8331%;
+  background-size: 142.15686%;
+}
+
+.litlle-arrow {
+  background-position: 0 91.8451%;
+  background-size: 268.51852%;
+}
+
+.growth {
+  background-position: 0 95.94748%;
+  background-size: 322.22222%;
+}
+
+.ppl {
+  background-position: 0 97.87186%;
+  background-size: 322.22222%;
+}
+
+.speed {
+  background-position: 0 100%;
+  background-size: 322.22222%;
+}
+
+.arrow4, .arrow1, .arrow2, .arrow3, .arrow5,
+.learning1, .learning2, .learning3, .learning4, .learning5,
+.learning6 {
+  max-width: 100%;
+  background-size: 100%;
+  background-image: url("../imgs/sprites2.png");
+}
+
+/*# sourceMappingURL=sprites.css.map */

@@ -1,0 +1,42 @@
+.top-row {
+  margin-top: 11px;
+}
+
+.middle-row {
+  margin-top: 11px;
+}
+
+.bottom-row {
+  height: 255px;
+}
+
+.menu form input {
+  padding-left: 17px;
+  padding-bottom: 0;
+}
+
+.menu {
+  margin-top: 0;
+}
+
+.arrow {
+  position: relative;
+  height: 10%;
+}
+
+.arrow h2 span:not([class="pdf"]):not([class="arrow-book"])::before {
+  top: 0;
+}
+.arrow h2 .arrow-book::before {
+  top: 0;
+}
+.arrow h2 img {
+  bottom: 60%;
+  left: 87%;
+}
+
+.container {
+  width: 78.13em;
+}
+
+/*# sourceMappingURL=mac.css.map */
